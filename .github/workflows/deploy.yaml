@@ -10,19 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20.x'
-
-      - name: Install dependencies
-        run: npm install
-
       - name: Deploy to Orbiter
-        uses: orbiterhost/orbiter-github-actions@v0.1.4
+        uses: orbiterhost/orbiter-github-actions@v0.1.4 # Update with latest version
         with:
-          project-name: 'hyphenish.orbiter.website'
-          build-dir: '/build'
-          api-key: ${{ secrets.ORBITER_API_KEY }}
-          node-version: '20.x'
-          build-command: 'npm run build'
+          project-name: 'hyphenish.orbiter.website' # Name of your project
+          build-dir: './build' # Name of the build output directory
+          api-key: ${{ secrets.ORBITER_API_KEY }} # Will use repository secret
+          # Optional inputs with their defaults
+          node-version: '20.x' # Optional, defaults to '20.x'
+          build-command: 'npm run build' # Optional, defaults to 'npm run build'
