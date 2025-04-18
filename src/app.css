@@ -1,0 +1,86 @@
+/* Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	/* Enable light/dark mode support */
+	color-scheme: light dark;
+
+	/* Colors */
+	--color-background: light-dark(#f7f5f2, #1a1a1a);
+	--color-text: light-dark(#2c2c2c, #f7f5f2);
+	--color-action: light-dark(#ff5733, #ff7f50);
+	--color-action-hover: light-dark(#e64a2e, #ff6b3d);
+	--color-border: light-dark(#e0e0e0, #333333);
+
+	/* Typography */
+	--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+	/* Spacing */
+	--space-xs: 0.5rem;
+	--space-sm: 1rem;
+	--space-md: 2rem;
+	--space-lg: 4rem;
+
+	/* Other */
+	--border-radius: 4px;
+	--transition: 150ms ease-in-out;
+}
+
+body {
+	font-family: var(--font-mono);
+	background-color: var(--color-background);
+	color: var(--color-text);
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: var(--color-action);
+	text-decoration: none;
+	transition: color var(--transition);
+}
+
+a:hover {
+	color: var(--color-action-hover);
+}
+
+button {
+	font-family: var(--font-mono);
+	background-color: var(--color-action);
+	color: #ffffff;
+	border: none;
+	padding: var(--space-xs) var(--space-sm);
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	transition: background-color var(--transition);
+}
+
+button:hover {
+	background-color: var(--color-action-hover);
+}
+
+textarea {
+	font-family: var(--font-mono);
+	background-color: var(--color-background);
+	color: var(--color-text);
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius);
+	padding: var(--space-xs);
+	width: 100%;
+	resize: vertical;
+	transition: border-color var(--transition);
+	font-size: 16px; /* Minimum size to prevent zoom on iOS */
+	line-height: 1.4;
+}
+
+textarea:focus {
+	outline: none;
+	border-color: var(--color-action);
+}

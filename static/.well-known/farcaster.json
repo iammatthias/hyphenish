@@ -1,0 +1,18 @@
+{
+	"accountAssociation": {
+		"header": "eyJmaWQiOjI3MjgsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgzNmM4NDhFMDA0OGVFMWNkNUU1YmU0NDI4NTQwRTE4M0Y4QmY5RDI2In0",
+		"payload": "eyJkb21haW4iOiJoeXBoZW5pc2guY29tIn0",
+		"signature": "MHgxYTgwMDZiZWZjZDYyYzcwNzdlMjIxZmExYjZiY2Q5NTIxYjc1ZmM0YWJlOGJlZGFjYjRlMjA0OTdlYzM3NmYxNjZiNTkwM2ZiMjc2NjMyNjBmOGZlNDgyOGE2MTNmMzRjNjhkYjFmYmNiYzlkNzFlODIwYjk1YjgwNzM4Njg2NTFi"
+	},
+	"frame": {
+		"version": "1",
+		"name": "Hyphenish",
+		"iconUrl": "https://hyphenish.com/icon.png",
+		"homeUrl": "https://hyphenish.com",
+		"imageUrl": "https://hyphenish.com/image.png",
+		"buttonTitle": "- —",
+		"splashImageUrl": "https://hyphenish.com/splash.png",
+		"splashBackgroundColor": "#f7f5f2",
+		"webhookUrl": "https://hyphenish.com/api/webhook"
+	}
+}
