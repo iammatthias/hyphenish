@@ -23,6 +23,6 @@ jobs:
         with:
           project-name: 'hyphenish.orbiter.website'
           build-dir: '/build'
-          api-key: ${{ secrets.ORBITER_DEPLOY_KEY }}
+          api-key: ${{ secrets.ORBITER_API_KEY }}
           node-version: '20.x'
           build-command: 'npm run build'
